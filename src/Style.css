@@ -18,9 +18,11 @@
 /*Main body elements*/
 header{
     text-align: center;
+    font-family: "Red Hat Display";
 }
 
 footer{
+    font-family: "IBM Plex Sans";
     text-align: center;
 }
 
@@ -44,5 +46,17 @@ footer{
     /*Flex elements*/
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
+}
+
+.link-btn{
+    /*Size styling*/
+    height: 60px;
+    width: 80%;
+    border-radius: 20px;
+    /*Font styling for buttons*/
+    font-family: "IBM Plex Sans";
+    font-size: 20px;
 }
