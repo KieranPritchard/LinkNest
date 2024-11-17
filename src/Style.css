@@ -24,6 +24,8 @@ footer{
     text-align: center;
 }
 
+/*Intro button styling*/
+
 #intro-btns{
     /*Flex elements*/
     display: flex;
@@ -35,6 +37,8 @@ footer{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+/*Link button styling*/
 
 #link-section{
     /*Flex elements*/
