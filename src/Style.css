@@ -1,0 +1,13 @@
+header{
+    text-align: center;
+}
+
+#intro-btns{
+    display: flex;
+    flex-direction: row;
+}
+
+#link-section{
+    display: flex;
+    flex-direction: column;
+}
