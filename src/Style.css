@@ -21,6 +21,11 @@ header{
     font-family: "Red Hat Display";
 }
 
+html, body {
+    background: linear-gradient(#081d3c, #133566);
+    height: 100%;  /* Ensure both html and body take the full viewport height */
+}
+
 footer{
     /* Position styling*/
     position: fixed;
