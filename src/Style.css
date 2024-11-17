@@ -1,13 +1,28 @@
+
+/*Main body elements*/
 header{
     text-align: center;
 }
 
+footer{
+    text-align: center;
+}
+
 #intro-btns{
+    /*Flex elements*/
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /*Padding for top and bottom of buttons*/
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #link-section{
+    /*Flex elements*/
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
