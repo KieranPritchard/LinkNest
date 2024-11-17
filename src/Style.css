@@ -22,28 +22,41 @@ header{
 }
 
 footer{
+    /* Position styling*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    /* Font style */
     font-family: "IBM Plex Sans";
     text-align: center;
 }
 
-/*Intro button styling*/
+/* Intro button styling */
 
 #intro-btns{
-    /*Flex elements*/
+    /* Flex elements */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    /*Padding for top and bottom of buttons*/
+    gap: 25px;
+    /* Padding for top and bottom of buttons */
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
-/*Link button styling*/
+.intro-btn{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    font-size: 25px;
+}
+
+/* Link button styling */
 
 #link-section{
-    /*Flex elements*/
+    /* Flex elements */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +70,7 @@ footer{
     display: flex;  /* Makes the icon and text place horizontally */
     align-items: center;  /* Does the same as the comment but vertically */
     justify-content: center;  /* Ensures the content is centered horizontally */
-    /*Button size stylings*/
+    /* Button size stylings */
     height: 60px;
     width: 80%;
     border-radius: 20px;
