@@ -51,12 +51,30 @@ footer{
     gap: 15px;
 }
 
-.link-btn{
-    /*Size styling*/
+/* Link button style */
+.link-btn {
+    /* Flexbox elements */
+    display: flex;  /* Makes the icon and text place horizontally */
+    align-items: center;  /* Does the same as the comment but vertically */
+    justify-content: center;  /* Ensures the content is centered horizontally */
+    /*Button size stylings*/
     height: 60px;
     width: 80%;
     border-radius: 20px;
-    /*Font styling for buttons*/
     font-family: "IBM Plex Sans";
     font-size: 20px;
+    padding: 0 20px; /* Adds padding on the left and right */
+    gap: 10px; /* Adds space between the icon and the text */
+}
+
+/* Icon styling */
+.link-btn i {
+    font-size: 25px; /* Sets the icon size */
+}
+
+/* Ensures the text is centered inside the button */
+.link-btn span {
+    display: flex;
+    justify-content: center;  /* Ensures the text is horizontally centered */
+    flex-grow: 1;  /* Ensures the text takes up the remaining space in the button */
 }
