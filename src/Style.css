@@ -59,7 +59,14 @@ footer{
     font-size: 25px;
     /* Colouring */
     background-color: white;
+    border-style: solid;
     border: white;
+}
+
+.intro-btn:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-style: solid;
 }
 
 /* Link button styling */
@@ -90,7 +97,7 @@ footer{
     /*Colouring*/
     background-color: white;
     border-color: white;
-    border-style: none;
+    border-style: solid;
 }
 
 /* Icon styling */
@@ -103,4 +110,9 @@ footer{
     display: flex;
     justify-content: center;  /* Ensures the text is horizontally centered */
     flex-grow: 1;  /* Ensures the text takes up the remaining space in the button */
+}
+
+.link-btn:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
 }
