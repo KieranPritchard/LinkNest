@@ -36,6 +36,8 @@ footer{
     /* Font style */
     font-family: "IBM Plex Sans";
     text-align: center;
+    /* Colouring */
+    color: white;
 }
 
 /* Intro button styling */
@@ -64,6 +66,7 @@ footer{
 }
 
 .intro-btn:hover{
+    transition: all 0.25s ease-in;
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border-style: solid;
@@ -113,6 +116,7 @@ footer{
 }
 
 .link-btn:hover{
+    transition: all 0.25s ease-in;
     background-color: rgba(0, 0, 0, 0);
     color: white;
 }
