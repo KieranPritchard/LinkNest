@@ -8,6 +8,8 @@ function checkDeviceDetails(){
     }
 }
 
+
+
 function openSocialLink(platform){
     if (platform == 'Github') {
         window.open("https://github.com/KieranPritchard")
