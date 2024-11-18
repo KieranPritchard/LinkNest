@@ -1,3 +1,13 @@
+function checkDeviceDetails(){
+    const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+    
+    if(isMobile === true){
+        return true
+    } else{
+        return false
+    }
+}
+
 function openSocialLink(platform){
     if (platform == 'Github') {
         window.open("https://github.com/KieranPritchard")
