@@ -16,22 +16,30 @@ function openIntroButton(buttonName){
     if(buttonName === "phone"){
         if(userUsingMobile === true){
             window.location.href = "tel:${phoneNumber}";
+            console.log("Used phone button on mobile device.");
         } else {
             navigator.clipboard.writeText(phoneNumber);
+            console.log("Used phone button on non-mobile device.");
         }
             
     } else if(buttonName == "email"){
         if(userUsingMobile === true){
             window.location.href = "mailto:${emailAddress}";
+            console.log("Used Email button on mobile device.")
         } else {
             navigator.clipboard.writeText(emailAddress);
+            console.log("Used Email button on non-mobile device.");
         }
     } else if(buttonName === "text"){
         if(userUsingMobile === true){
             window.location.href = "sms:${phoneNumber}";
+            console.log("Used text button on mobile device")
         } else {
             navigator.clipboard.writeText(phoneNumber);
+            console.log("Used text button on non-mobile device.");
         }
+    } else{
+        console.log("Your using a invaild paremeter.");
     }
 }
 
