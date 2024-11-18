@@ -19,6 +19,7 @@
 header{
     text-align: center;
     font-family: "Red Hat Display";
+    color: white;
 }
 
 html, body {
@@ -56,6 +57,9 @@ footer{
     width: 60px;
     border-radius: 100%;
     font-size: 25px;
+    /* Colouring */
+    background-color: white;
+    border: white;
 }
 
 /* Link button styling */
@@ -83,6 +87,10 @@ footer{
     font-size: 20px;
     padding: 0 20px; /* Adds padding on the left and right */
     gap: 10px; /* Adds space between the icon and the text */
+    /*Colouring*/
+    background-color: white;
+    border-color: white;
+    border-style: none;
 }
 
 /* Icon styling */
