@@ -14,20 +14,23 @@
     <!--Intro section to the webpage-->
     <header>
         
-        <img src="" alt="">
+        <img id="intro-image" src="" alt="">
 
-        <h1>Kieran Pritchard</h1>
-        <h2>T-Level Digital Student</h2>
+        <h1 class="text-center" id="intro-name">Kieran Pritchard</h1>
+        <h2 class="text-center" id="intro-occupation">T-Level Digital Student</h2>
 
-        <div id = "intro-btns">
+        <div class="text-center">
+            <!-- Phone intro button -->
             <Button onclick="openIntroButton('phone')" class="intro-btn">
                 <i class="fa-solid fa-phone"></i>
             </Button>
 
+            <!-- Email intro button -->
             <button onclick="openIntroButton('email')" class="intro-btn">
                 <i class="fa-regular fa-envelope"></i>
             </button>
 
+            <!-- Message intro button -->
             <button onclick="openIntroButton('text')" class="intro-btn">
                 <i class="fa-solid fa-message"></i>
             </button>
@@ -37,18 +40,34 @@
 
     <!--Links to the other pages-->
 
-    <div id="link-section">
-        <button onclick="openSocialLink('GitHub')" class="link-btn" id="github-btn">
-            <i class="fa-brands fa-github"></i>
-            <span>GitHub</span>
-        </button>
-        <button onclick="openSocialLink('Linkedin')" class="link-btn" id="linkedin-btn">
-            <i class="fa-brands fa-linkedin"></i>
-            <span>Linkedin</span>
+    <div class="text-center" id="links-section">
+
+        <!-- GitHub Button -->
+        <button class="link-button">
+            <div class="row p-0 m-0">
+                <div class="col-1 p-0 m-auto">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="col-11 m-auto">
+                    <p class="m-auto text-center">GitHub</p>
+                </div>
+            </div>
+        </button><br>
+        
+        <!-- Linkedin Button -->
+        <button class="link-button">
+            <div class="row p-0 m-0">
+                <div class="col-1 p-0 m-auto">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="col-11 m-auto">
+                    <p class="m-auto text-center">Linkedin</p>
+                </div>
+            </div>
         </button>
     </div>
 
-    <footer>
+    <footer class="fixed-bottom text-center">
         <p>© 2024 Kieran Pritchard</p>
     </footer>
 
