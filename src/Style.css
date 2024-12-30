@@ -51,15 +51,19 @@ body{
 
 .intro-btn{
     font-size: 20px;
+    /* Measurements */
     padding: 10px 15px;
     margin-left: 10px;
     margin-right: 10px;
+    /* Colouring */
     color: #001d3d;
     background-color: #a9d6e5;
+    /*Border styling*/
     border-style: solid;
     border-color: #a9d6e5;
     border-width: 3px;
     border-radius: 50%;
+    /* Animations */
     transition: all ease-in-out 0.3s;
 }
 
@@ -71,16 +75,20 @@ body{
 /* Links Styling */
 
 .link-button{
+    background-color: #a9d6e5;
+    /* Measurements */
     width: 85%;
     height: 60px;
-    background-color: #a9d6e5;
+    margin-top: 10px;
+    /* Text Styling */
     font-family: "Source Code Pro";
     font-size: 20px;
+    /* Border styling */
     border-style: solid;
     border-color: #a9d6e5;
     border-width: 3px;
     border-radius: 25px;
-    margin-top: 10px;
+    /* Animations */
     transition: all ease-in-out 0.3s;
 }
 
