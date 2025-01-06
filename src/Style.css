@@ -22,6 +22,7 @@ h1{
     text-align: center;
     color: #a9d6e5;
     font-size: 35px;
+    padding-top: 10px;
 }
 
 h2{
@@ -45,15 +46,16 @@ body{
 /* Intro section styling */
 
 #intro-image{
-    height: 100px;
+    height: 200px;
     width: auto;
-    border-radius: 25px;
+    border-radius: 100px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 #intro-section{
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
