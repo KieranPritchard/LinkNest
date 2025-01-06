@@ -110,3 +110,11 @@ body{
 footer{
     color: #a9d6e5;
 }
+
+footer a{
+    color: #a9d6e5;
+}
+
+footer a:hover{
+    color: #ffc300;
+}
