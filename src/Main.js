@@ -14,7 +14,7 @@ function openIntroButton(buttonName){
     // All nessary varibles to make function work.
     const userUsingMobile = checkDeviceDetails();
     const phoneNumber = "";
-    const emailAddress = "";
+    const emailAddress = "KieranPritchard06@gmail.com";
 
     // Checks what button is being used
     if(buttonName === "phone"){
@@ -23,6 +23,7 @@ function openIntroButton(buttonName){
             window.location.href = "tel:${phoneNumber}";
             console.log("Used phone button on mobile device.");
         } else {
+            alert("Phone Number: " + phoneNumber + "\nThis is also copied to your clipboard.")
             // Copys the phone number to the clipboard.
             navigator.clipboard.writeText(phoneNumber);
             console.log("Used phone button on non-mobile device.");
@@ -34,6 +35,7 @@ function openIntroButton(buttonName){
             window.location.href = "mailto:${emailAddress}";
             console.log("Used Email button on mobile device.")
         } else {
+            alert("Email Address: " + emailAddress + "\nThis is also copied to your clipboard.")
             // Copys the email address to the clipboard.
             navigator.clipboard.writeText(emailAddress);
             console.log("Used Email button on non-mobile device.");
@@ -44,6 +46,7 @@ function openIntroButton(buttonName){
             window.location.href = "sms:${phoneNumber}";
             console.log("Used text button on mobile device")
         } else {
+            alert("Phone Number: " + phoneNumber + "\nThis is also copied to your clipboard.")
             // Copys the phone number to the clipboard.
             navigator.clipboard.writeText(phoneNumber);
             console.log("Used text button on non-mobile device.");
