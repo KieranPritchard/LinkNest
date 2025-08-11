@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/yourrepo/'
+  base: '/LinkNest/'
 })
