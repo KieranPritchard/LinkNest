@@ -7,11 +7,11 @@ import ProfileImage from './components/ProfileImage'
 
 function App() {
   return(
-    <div className='h-auto bg-linear-to-br from-[#0d1b2a] to-[#1b2b41] py-4'>
+    <div className='h-auto bg-linear-to-br from-[#0d1b2a] to-[#1b2b41] py-4 px-[5%]'>
       <ProfileImage />
       <NameBox />
       <ButtonRow />
-      <div className='mx-32'>
+      <div>
         <LinkButton buttonName={"Linkedin"} buttonLink={"https://www.linkedin.com/in/kieran-pritchard/"} />
         <LinkButton buttonName={"GitHub"} buttonLink={"https://github.com/KieranPritchard"} />
         <LinkButton buttonName={"Try Hack Me"} buttonLink={"https://tryhackme.com/p/NightProxy"} />
