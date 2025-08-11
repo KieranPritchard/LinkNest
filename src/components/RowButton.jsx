@@ -17,7 +17,7 @@ function RowButton(props){
     const handleIcon = () => {
         switch (props.Icon) {
             case "phone":
-                return faPhone
+                return faPhone 
                 break;
             case "email":
                 return faEnvelope
