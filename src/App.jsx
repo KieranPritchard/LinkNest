@@ -1,5 +1,6 @@
 import './App.css'
 import ButtonRow from './components/ButtonRow'
+import Footer from './components/Footer'
 import LinkButton from './components/LinkButton'
 import NameBox from './components/NameBox'
 import ProfileImage from './components/ProfileImage'
@@ -16,6 +17,7 @@ function App() {
         <LinkButton buttonName={"Try Hack Me"} buttonLink={"https://tryhackme.com/p/NightProxy"} />
         <LinkButton buttonName={"Portfolio"} buttonLink={"https://kieranpritchard.github.io/Kieran-Pritchard-Portfolio/"} />
       </div>
+      <Footer />
     </div>
   )
 }
