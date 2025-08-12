@@ -9,7 +9,11 @@ module.exports = {
             redhat: ['"Red Hat Display"', 'sans-serif'],
             sourcecode: ['"Source Code Pro"', 'monospace'],
         },
+        fontWeight: {
+            900: '900',
+            400: '400',
+        },
         },
     },
     plugins: [],
-}
+    }
