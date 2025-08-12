@@ -38,7 +38,7 @@ function RowButton({ contact, Icon }) {
         <>
         <button
             onClick={() => handleClick(contact)}
-            className="bg-[#d7e1ec] hover:text-[#d7e1ec] hover:bg-transparent border-2 border-[#d7e1ec] rounded-full h-12 w-12 flex items-center justify-center"
+            className="bg-[#d7e1ec] hover:text-[#d7e1ec] hover:bg-transparent border-2 border-[#d7e1ec] rounded-full h-12 w-12 flex items-center justify-center  transition-colors duration-300 ease-in-out"
         >
             <FontAwesomeIcon icon={handleIcon()} />
         </button>
