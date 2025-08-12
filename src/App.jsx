@@ -4,6 +4,8 @@ import Footer from './components/Footer'
 import LinkButton from './components/LinkButton'
 import NameBox from './components/NameBox'
 import ProfileImage from './components/ProfileImage'
+import '@fontsource/red-hat-display/900.css';   // Red Hat Display, weight 900
+import '@fontsource/source-code-pro/400.css';   // Source Code Pro, weight 400
 
 function App() {
   return(
