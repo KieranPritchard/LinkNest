@@ -9,7 +9,7 @@ import '@fontsource/source-code-pro/400.css';   // Source Code Pro, weight 400
 
 function App() {
   return(
-    <div className='h-auto bg-linear-to-br dark:from-[#0d1b2a] dark:to-[#1b2b41] from-[#f9fafb] to-[#d7e1ec] py-4 px-[5%]'>
+    <div className='min-h-screen bg-gradient-to-br dark:from-[#0d1b2a] dark:to-[#1b2b41] from-[#f9fafb] to-[#d7e1ec] py-4 px-[5%]'>
       <ProfileImage />
       <NameBox />
       <ButtonRow />
