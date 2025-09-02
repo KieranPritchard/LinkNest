@@ -1,48 +1,54 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMessage } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
-import Toast from '../components/Toast'; // make sure this exists
 
 function RowButton({ contact, Icon }) {
-    const [toast, setToast] = useState(null);
+    const [isWide, setIsWide] = useState(false)
 
-    const showToast = () => {
-        setToast(`${contact} was added to your clipboard`);
+    const handleClick = () => {
+        if(isWide){
+            setIsWide(false)
+        } else{
+            setIsWide(true)
+        }
     };
 
-    const handleClick = (text) => {
-        navigator.clipboard.writeText(text)
-        .then(() => {
-            console.log('Text copied to clipboard!');
-            showToast();
-        })
-        .catch(err => {
-            console.error('Failed to copy text: ', err);
-        });
-    };
+    const handleButton = () => {
+        const baseClasses = "bg-[#d7e1ec] hover:text-[#d7e1ec] hover:bg-transparent border-2 border-[#d7e1ec] rounded-full h-12 flex items-center justify-center transition-colors duration-300 ease-in-out";
 
-    const handleIcon = () => {
+        const buttonClass = isWide ? `${baseClasses} px-4` : `${baseClasses} w-12`;
+        const textClass = isWide ? "ml-2 inline" : "hidden";
+
         switch (Icon) {
-        case "phone":
-            return faPhone;
-        case "email":
-            return faEnvelope;
-        case "message":
-            return faMessage;
-        default:
-            return null;
+            case "phone":
+                return (
+                    <button onClick={() => handleClick()} className={buttonClass}>
+                        <FontAwesomeIcon icon={faPhone} />
+                        <p className={textClass}>+44 07763 534145</p>
+                    </button>
+                );
+            case "email":
+                return (
+                    <button onClick={() => handleClick()} className={buttonClass}>
+                        <FontAwesomeIcon icon={faEnvelope} />
+                        <p className={textClass}>KieranPritchard06@gmail.com</p>
+                    </button>
+                );
+            case "message":
+                return (
+                    <button onClick={() => handleClick()} className={buttonClass}>
+                        <FontAwesomeIcon icon={faMessage} />
+                        <p className={textClass}>+44 07763 534145</p>
+                    </button>
+                );
+            default:
+                return null;
         }
     };
 
     return (
         <>
-        <button
-            onClick={() => handleClick(contact)}
-            className="bg-[#d7e1ec] hover:text-[#d7e1ec] hover:bg-transparent border-2 border-[#d7e1ec] rounded-full h-12 w-12 flex items-center justify-center  transition-colors duration-300 ease-in-out"
-        >
-            <FontAwesomeIcon icon={handleIcon()} />
-        </button>
-        {toast && <Toast message={toast} onClose={() => setToast(null)} />}
+            {handleButton()}
         </>
     );
 }
