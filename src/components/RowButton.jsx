@@ -14,7 +14,7 @@ function RowButton({ contact, Icon }) {
     };
 
     const handleButton = () => {
-        const baseClasses = "bg-[#d7e1ec] hover:text-[#d7e1ec] hover:bg-transparent border-2 border-[#d7e1ec] rounded-full h-12 flex items-center justify-center transition-colors duration-300 ease-in-out";
+        const baseClasses = "bg-[#2a3c4b] dark:bg-[#a9d6e5] hover:text-[#2a3c4b] dark:hover:text-[#a9d6e5] text-[#f9fafb] dark:text-[#0d1b2a] hover:bg-transparent border-2 border-[#2a3c4b] rounded-full h-12 flex items-center justify-center transition-colors duration-300 ease-in-out";
 
         const buttonClass = isWide ? `${baseClasses} px-4` : `${baseClasses} w-12`;
         const textClass = isWide ? "ml-2 inline" : "hidden";

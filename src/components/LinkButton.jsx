@@ -4,7 +4,7 @@ function LinkButton(props){
     }
 
     return(
-        <button style={{fontFamily: '"Source Code Pro", monospace', fontWeight: 400,}} className="bg-[#d7e1ec] text-[#0d1b2a] h-14 w-full rounded-xl border-2 border-[#d7e1ec] text-lg my-2 hover:bg-transparent hover:text-[#d7e1ec] transition-colors duration-300 ease-in-out" onClick={() => handleLink(props.buttonLink)}>
+        <button style={{fontFamily: '"Source Code Pro", monospace', fontWeight: 400,}} className="bg-[#2a3c4b] dark:bg-[#a9d6e5] text-[#f9fafb] dark:text-[#a9d6e5] border-[#2a3c4b] dark:border-[#a9d6e5] hover:text-[#2a3c4b] dark:hover:text-[#a9d6e5] h-14 w-full rounded-xl border-2 text-lg my-2 hover:bg-transparent transition-colors duration-300 ease-in-out" onClick={() => handleLink(props.buttonLink)}>
             {props.buttonName}
         </button>
     )
