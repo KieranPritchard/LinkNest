@@ -1,57 +1,43 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMessage } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
 
-function RowButton({ icon, details }) {
-    const [isWide, setIsWide] = useState(false);
-
-    const handleClick = () => setIsWide((prev) => !prev);
-
+function RowButton({ icon, details, isOpen, onClick }) {
     const handleOpenSize = (text) => {
-        if(text.length > 25 ){
-            return "w-72"
-        } else{
-            return "w-64"
-        }
-    }
+        return text.length > 25 ? "w-72" : "w-64";
+    };
 
     const handleMaxWidth = (text) => {
-        if(text.length > 25 ){
-            return "max-w-[225px]"
-        } else{
-            return "max-w-[200px]"
+        return text.length > 25 ? "max-w-[225px]" : "max-w-[200px]";
+    };
+
+    const baseClasses =
+        "bg-[#2a3c4b] dark:bg-[#a9d6e5] hover:text-[#2a3c4b] dark:hover:text-[#a9d6e5] text-[#f9fafb] dark:text-[#0d1b2a] hover:bg-transparent border-2 border-[#2a3c4b] dark:border-[#a9d6e5] rounded-full h-12 flex items-center justify-center transition-all duration-300 overflow-hidden";
+    const buttonClass = isOpen
+        ? `${baseClasses} ${handleOpenSize(details)} px-4`
+        : `${baseClasses} w-12`;
+    const textClass = isOpen
+        ? `ml-2 ${handleMaxWidth(details)} opacity-100 transition-all duration-300 whitespace-nowrap overflow-hidden`
+        : `max-w-0 opacity-0 transition-all duration-300 whitespace-nowrap overflow-hidden`;
+
+    const getIcon = () => {
+        switch (icon) {
+            case "phone":
+                return faPhone;
+            case "email":
+                return faEnvelope;
+            case "message":
+                return faMessage;
+            default:
+                return null;
         }
-    }
+    };
 
-    const baseClasses = "bg-[#2a3c4b] dark:bg-[#a9d6e5] hover:text-[#2a3c4b] dark:hover:text-[#a9d6e5] text-[#f9fafb] dark:text-[#0d1b2a] hover:bg-transparent border-2 border-[#2a3c4b] dark:border-[#a9d6e5] rounded-full h-12 flex items-center justify-center transition-all duration-300 overflow-hidden";
-    const buttonClass = isWide ? `${baseClasses} ${handleOpenSize(details)} px-4` : `${baseClasses} w-12`;
-    const textClass = isWide ? `ml-2 ${handleMaxWidth(details)} opacity-100 transition-all duration-300 whitespace-nowrap overflow-hidden` : `max-w-0 opacity-0 transition-all duration-300 whitespace-nowrap overflow-hidden`;
-
-    switch (icon) {
-        case "phone":
-            return (
-                <button onClick={handleClick} className={buttonClass}>
-                    <FontAwesomeIcon icon={faPhone} />
-                    <span className={textClass}>{details}</span>
-                </button>
-            );
-        case "email":
-            return (
-                <button onClick={handleClick} className={buttonClass}>
-                    <FontAwesomeIcon icon={faEnvelope} />
-                    <span className={textClass}>{details}</span>
-                </button>
-            );
-        case "message":
-            return (
-                <button onClick={handleClick} className={buttonClass}>
-                    <FontAwesomeIcon icon={faMessage} />
-                    <span className={textClass}>{details}</span>
-                </button>
-            );
-        default:
-            return null;
-    }
+    return (
+        <button onClick={onClick} className={buttonClass}>
+            <FontAwesomeIcon icon={getIcon()} />
+            <span className={textClass}>{details}</span>
+        </button>
+    );
 }
 
 export default RowButton;
