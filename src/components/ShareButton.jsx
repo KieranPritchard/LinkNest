@@ -24,7 +24,7 @@ function ShareButton() {
                 <img
                     src={qrCode}
                     alt="QR Code"
-                    className="aspect-square h-75 pb-5 transition-all duration-300"
+                    className="aspect-square h-75 sm:h-95 pb-5 transition-all duration-300"
                 />
                 </div>
             </div>
