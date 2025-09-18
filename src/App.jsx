@@ -9,19 +9,21 @@ import '@fontsource/red-hat-display/900.css';   // Red Hat Display, weight 900
 import '@fontsource/source-code-pro/400.css';   // Source Code Pro, weight 400
 
 function App() {
-  return(
-    <div className='min-h-screen bg-gradient-to-br dark:from-[#0d1b2a] dark:to-[#1b2b41] from-[#f9fafb] to-[#d7e1ec] py-4 px-[5%]'>
-      <ProfileImage />
-      <NameBox />
-      <ButtonRow />
-      <div>
-        <LinkButton buttonName={"Linkedin"} buttonLink={"https://www.linkedin.com/in/kieran-pritchard/"} />
-        <LinkButton buttonName={"GitHub"} buttonLink={"https://github.com/KieranPritchard"} />
-        <LinkButton buttonName={"Try Hack Me"} buttonLink={"https://tryhackme.com/p/NightProxy"} />
-        <LinkButton buttonName={"Portfolio"} buttonLink={"https://kieranpritchard.github.io/Kieran-Pritchard-Portfolio/"} />
-        <ShareButton /> 
+  return (
+    <div className="min-h-screen w-full bg-gradient-to-br dark:from-[#0d1b2a] dark:to-[#1b2b41] from-[#f9fafb] to-[#d7e1ec] pt-6 pb-[calc(env(safe-area-inset-bottom)+2.5rem)] px-[5%]">
+      <div className="lg:max-w-3xl lg:mx-auto justify-center">
+        <ProfileImage />
+        <NameBox />
+        <ButtonRow />
+        <div className="space-y-2">
+          <LinkButton buttonName="Linkedin" buttonLink="https://www.linkedin.com/in/kieran-pritchard/" />
+          <LinkButton buttonName="GitHub" buttonLink="https://github.com/KieranPritchard" />
+          <LinkButton buttonName="Try Hack Me" buttonLink="https://tryhackme.com/p/NightProxy" />
+          <LinkButton buttonName="Portfolio" buttonLink="https://kieranpritchard.github.io/Kieran-Pritchard-Portfolio/" />
+          <ShareButton />
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   )
 }
