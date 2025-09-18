@@ -5,12 +5,12 @@ import LinkButton from './components/LinkButton'
 import NameBox from './components/NameBox'
 import ProfileImage from './components/ProfileImage'
 import ShareButton from './components/ShareButton'
-import '@fontsource/red-hat-display/900.css';   // Red Hat Display, weight 900
-import '@fontsource/source-code-pro/400.css';   // Source Code Pro, weight 400
+import '@fontsource/red-hat-display/900.css'   // Red Hat Display, weight 900
+import '@fontsource/source-code-pro/400.css'  // Source Code Pro, weight 400
 
 function App() {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br dark:from-[#0d1b2a] dark:to-[#1b2b41] from-[#f9fafb] to-[#d7e1ec] pt-6 pb-[calc(env(safe-area-inset-bottom)+2.5rem)] px-[5%]">
+    <div className="h-screen min-h-[100dvh] w-full bg-gradient-to-br dark:from-[#0d1b2a] dark:to-[#1b2b41] from-[#f9fafb] to-[#d7e1ec] pt-[calc(env(safe-area-inset-top)+1.5rem)] pb-[calc(env(safe-area-inset-bottom)+2.5rem)] px-[5%]">
       <div className="lg:max-w-3xl lg:mx-auto justify-center">
         <ProfileImage />
         <NameBox />
