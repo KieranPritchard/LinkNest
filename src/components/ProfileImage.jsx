@@ -1,4 +1,4 @@
-import Picture from '../assets/Image-Of-Self-1.webp'
+import Picture from '../assets/kieran-pritchard-profile-photo.webp'
 
 function ProfileImage(){
     return(
