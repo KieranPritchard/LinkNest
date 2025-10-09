@@ -20,7 +20,7 @@ function App() {
         <LinkButton buttonName={"Linkedin"} buttonLink={"https://www.linkedin.com/in/kieran-pritchard/"} />
         <LinkButton buttonName={"GitHub"} buttonLink={"https://github.com/KieranPritchard"} />
         <LinkButton buttonName={"Try Hack Me"} buttonLink={"https://tryhackme.com/p/NightProxy"} />
-        <LinkButton buttonName={"Portfolio"} buttonLink={"https://kieranpritchard.github.io/Kieran-Pritchard-Portfolio/"} />
+        <LinkButton buttonName={"Portfolio"} buttonLink={"https://kieranpritchard.github.io/"} />
         <ShareButton /> 
       </div>
       <Footer />
