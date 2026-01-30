@@ -1,10 +1,10 @@
 import './App.css'
 import ButtonRow from './components/ButtonRow'
-import DownloadCvButton from './components/DownloadCvButton'
-import Footer from './components/Footer'
+import DownloadCvButton from './components/buttons/DownloadCvButton'
+import Footer from './components/main_elements/Footer'
 import LinkButton from './components/LinkButton'
-import NameBox from './components/NameBox'
-import ProfileImage from './components/ProfileImage'
+import NameBox from './components/about/NameBox'
+import ProfileImage from './components/about/ProfileImage'
 import ShareButton from './components/ShareButton'
 
 function App() {
