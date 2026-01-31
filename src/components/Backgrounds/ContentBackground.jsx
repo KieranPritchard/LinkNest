@@ -1,7 +1,9 @@
 function ContentBackground({children}) {
     return(
         <>
-            
+            <div>
+                {children}
+            </div>
         </>
     )
 }
