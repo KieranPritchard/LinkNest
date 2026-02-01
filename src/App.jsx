@@ -2,6 +2,7 @@ import './App.css'
 import ContentBackground from './components/backgrounds/ContentBackground'
 import Biography from './components/Bio/Biography'
 import PersonalBio from './components/Bio/PersonalBio'
+import LongButton from './components/Buttons/LongButton'
 import SmallButton from './components/Buttons/SmallButton'
 
 function App() {
@@ -14,21 +15,26 @@ function App() {
           {/* Returns the personal vio and biography */}
           <PersonalBio />
           <Biography />
-          <div className='flex justify-center pt-5'>
-            {/* Left Spacer: Matches the w-64 image/spacer in other components */}
+          <div className='flex justify-center pt-5 gap-8'>
+            {/* Left Spacer */}
             <div className="w-64 flex-shrink-0"></div> 
 
-            {/* The Grid: This now occupies the "Content Column" space */}
-            <div className='grid grid-cols-6 w-full justify-items-center'>
+            {/* Content Section */}
+            <div className='flex-1 grid grid-cols-6 gap-x-12 gap-y-2'>
               <SmallButton icon={"Linkedin"} link={"https://www.linkedin.com/in/kieran-pritchard/"}/>
               <SmallButton icon={"Github"} link={"https://github.com/KieranPritchard"}/>
               <SmallButton icon={"Try Hack Me"} link={"https://tryhackme.com/p/OverFl0x"}/>
               <SmallButton icon={"Hack The Box"} link={"https://app.hackthebox.com/users/2380996"}/>
               <SmallButton icon={"Portfolio"} link={"https://kieranpritchard.github.io"}/>
               <SmallButton icon={"Email"} link={"mailto:KieranPritchard06@gmail.com"}/>
+              
+              {/* This will now align perfectly with the edges of the buttons above */}
+              <div className='col-span-6'>
+                  <LongButton text="CTF (Capture The Flag Write Ups)" link="https://kieranpritchard.github.io/CTF-Showcase/#/" icon="globe" />
+              </div>
             </div>
 
-            {/* Right Spacer: Matches the right spacer in Biography */}
+            {/* Right Spacer */}
             <div className="w-64 flex-shrink-0"></div> 
           </div>
         </ContentBackground>
