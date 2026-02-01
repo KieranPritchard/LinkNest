@@ -1,4 +1,4 @@
-import { faFile } from '@fortawesome/free-solid-svg-icons';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Function to allow users to download a file
@@ -12,7 +12,7 @@ function DownloadButton({file, fileName, text}){
         >
             {/* Icon on the far left */}
             <span>
-                <FontAwesomeIcon icon={faFile} />
+                <FontAwesomeIcon icon={faDownload} />
             </span>
 
             {/* Text centered */}
