@@ -7,8 +7,11 @@ import SmallButton from './components/Buttons/SmallButton'
 function App() {
   return(
     <>
-      <div className='min-h-screen bg-gradient-to-br dark:bg-[#0d1b2a] bg-[#f9fafb] py-4'>
+      {/* Displays the background colour of the app */}
+      <div className='min-h-screen dark:bg-[#0d1b2a] bg-[#f9fafb] py-4'>
+        {/* Wrapps the other components in a background component */}
         <ContentBackground>
+          {/* Returns the personal vio and biography */}
           <PersonalBio />
           <Biography />
           <div className='flex justify-center pt-5'>
