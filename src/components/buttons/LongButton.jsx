@@ -2,7 +2,7 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function LinkButton(props){
+function LongButton(props){
     const handleLink = (link) => {
         window.open(link)
     }
@@ -38,4 +38,4 @@ function LinkButton(props){
     )
 }
 
-export default LinkButton
+export default LongButton
