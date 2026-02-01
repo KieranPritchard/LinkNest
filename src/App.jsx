@@ -20,12 +20,12 @@ function App() {
 
             {/* The Grid: This now occupies the "Content Column" space */}
             <div className='grid grid-cols-6 w-full justify-items-center'>
-              <SmallButton icon={"phone"}/>
-              <SmallButton icon={"phone"}/>
-              <SmallButton icon={"phone"}/>
-              <SmallButton icon={"phone"}/>
-              <SmallButton icon={"phone"}/>
-              <SmallButton icon={"phone"}/>
+              <SmallButton icon={"Linkedin"} link={"https://www.linkedin.com/in/kieran-pritchard/"}/>
+              <SmallButton icon={"Github"} link={"https://github.com/KieranPritchard"}/>
+              <SmallButton icon={"Try Hack Me"} link={"https://tryhackme.com/p/OverFl0x"}/>
+              <SmallButton icon={"Hack The Box"} link={"https://app.hackthebox.com/users/2380996"}/>
+              <SmallButton icon={"Portfolio"} link={"https://kieranpritchard.github.io"}/>
+              <SmallButton icon={"Email"} link={"mailto:KieranPritchard06@gmail.com"}/>
             </div>
 
             {/* Right Spacer: Matches the right spacer in Biography */}
