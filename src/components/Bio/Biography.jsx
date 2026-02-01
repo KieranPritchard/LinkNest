@@ -15,6 +15,10 @@ function Biography(){
                     quaerat provident excepturi rerum impedit consequatur.
                 </p>
             </div>
+
+            {/* Spacer: This matches the width of the img (w-64) exactly */}
+            <div className="w-64 flex-shrink-0"></div> 
+
         </div>
     )
 }
