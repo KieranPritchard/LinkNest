@@ -2,6 +2,7 @@ import './App.css'
 import ContentBackground from './components/backgrounds/ContentBackground'
 import Biography from './components/Bio/Biography'
 import PersonalBio from './components/Bio/PersonalBio'
+import SmallButton from './components/Buttons/SmallButton'
 
 function App() {
   return(
@@ -10,6 +11,23 @@ function App() {
         <ContentBackground>
           <PersonalBio />
           <Biography />
+          <div className='flex justify-center pt-5'>
+            {/* Left Spacer: Matches the w-64 image/spacer in other components */}
+            <div className="w-64 flex-shrink-0"></div> 
+
+            {/* The Grid: This now occupies the "Content Column" space */}
+            <div className='grid grid-cols-6 w-full justify-items-center'>
+              <SmallButton icon={"phone"}/>
+              <SmallButton icon={"phone"}/>
+              <SmallButton icon={"phone"}/>
+              <SmallButton icon={"phone"}/>
+              <SmallButton icon={"phone"}/>
+              <SmallButton icon={"phone"}/>
+            </div>
+
+            {/* Right Spacer: Matches the right spacer in Biography */}
+            <div className="w-64 flex-shrink-0"></div> 
+          </div>
         </ContentBackground>
       </div>
     </>

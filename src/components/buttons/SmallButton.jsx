@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMessage } from '@fortawesome/free-solid-svg-icons';
 
-function SmallButton({ icon, details}) {
-
+function SmallButton({icon}) {
     const getIcon = () => {
         switch (icon) {
             case "phone":
@@ -17,9 +16,8 @@ function SmallButton({ icon, details}) {
     };
 
     return (
-        <button onClick={onClick} className={buttonClass}>
+        <button className="bg-[#A9D6E5] hover:bg-[#1B2B41] text-[#1B2B41] hover:text-[#A9D6E5] border-2 border-[#A9D6E5] text-4xl h-22 w-22 rounded-xl transition-all transition-300">
             <FontAwesomeIcon icon={getIcon()} />
-            <span className={textClass}>{details}</span>
         </button>
     );
 }
