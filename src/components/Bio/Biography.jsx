@@ -1,7 +1,7 @@
 function Biography(){
     return(
         /* Match the flex layout and gap of the PersonalBio */
-        <div className="flex justify-start gap-8">
+        <div className="flex justify-start gap-10">
             
             {/* Spacer: This matches the width of the img (w-64) exactly */}
             <div className="w-64 flex-shrink-0"></div> 

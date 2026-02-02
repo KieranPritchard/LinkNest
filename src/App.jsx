@@ -21,12 +21,12 @@ function App() {
           {/* Returns the personal vio and biography */}
           <PersonalBio />
           <Biography />
-          <div className='flex justify-center pt-5 gap-8'>
+          <div className='flex justify-center pt-5 gap-10'>
             {/* Left Spacer */}
             <div className="w-64 flex-shrink-0"></div> 
 
             {/* Content Section */}
-            <div className='flex-1 grid grid-cols-6 gap-x-12 gap-y-2'>
+            <div className='flex-1 grid grid-cols-6 gap-x-10 gap-y-2'>
               <SmallButton icon={"Linkedin"} link={"https://www.linkedin.com/in/kieran-pritchard/"}/>
               <SmallButton icon={"Github"} link={"https://github.com/KieranPritchard"}/>
               <SmallButton icon={"Try Hack Me"} link={"https://tryhackme.com/p/OverFl0x"}/>
