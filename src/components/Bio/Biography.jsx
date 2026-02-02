@@ -4,7 +4,7 @@ function Biography(){
         <div className="flex flex-col justify-start gap-10 md:flex-row">
             
             {/* Spacer: This matches the width of the img (w-64) exactly */}
-            <div className="w-64 flex-shrink-0"></div> 
+            <div className="w-64 flex-shrink-0 hidden md:block"></div> 
 
             {/* Content column */}
             <div className="flex flex-col text-white">
@@ -17,7 +17,7 @@ function Biography(){
             </div>
 
             {/* Spacer: This matches the width of the img (w-64) exactly */}
-            <div className="w-64 flex-shrink-0"></div> 
+            <div className="w-64 flex-shrink-0 hidden md:block"></div> 
 
         </div>
     )
