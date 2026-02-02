@@ -8,6 +8,8 @@ import LongButton from './components/Buttons/LongButton'
 import SmallButton from './components/Buttons/SmallButton'
 // Imports for files
 import CV from '../src/assets/Kieran_Pritchard_C.V.pdf'
+import ImageDropDownButton from './components/Buttons/ImageDropDownButton'
+import ShareQRCode from '../src/assets/qr_code.webp'
 
 function App() {
   return(
@@ -36,6 +38,7 @@ function App() {
               <div className='col-span-6'>
                   <LongButton text="CTF (Capture The Flag Write Ups)" link="https://kieranpritchard.github.io/CTF-Showcase/#/" icon="globe" />
                   <DownloadButton fileName={"KieranPritchard-C.V.pdf"} file={CV} text={"Download My C.V"}/>
+                  <ImageDropDownButton text={"Share with others"} image={ShareQRCode} altText={"QR code to share with other people"}/>
               </div>
             </div>
 
