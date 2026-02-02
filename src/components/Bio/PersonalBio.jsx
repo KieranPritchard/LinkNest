@@ -3,13 +3,13 @@ import Picture from '../../assets/kieran-pritchard-profile-photo.webp'
 function PersonalBio(){
     return(
         /* Changed grid to flex and added gap-8 to control the distance */
-        <div className="flex justify-start items-center gap-10">
+        <div className="flex flex-col justify-start items-center gap-10 md:flex-row">
             {/* Image section */}
             <div className='flex justify-center'>
                 <img className='rounded-full w-64' src={Picture} alt="Image of me" />
             </div>
 
-            <div className="flex flex-col justify-center text-white">
+            <div className="flex flex-col justify-center text-white text-center md:text-left">
                 {/* Section with bio */}
                 <h1 className='text-6xl font-bold'>Kieran Pritchard</h1>
                 <h2 className='text-4xl'>T-Level Student</h2>
