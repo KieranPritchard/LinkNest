@@ -1,9 +1,13 @@
 import './App.css'
+// Imports for components
 import ContentBackground from './components/backgrounds/ContentBackground'
 import Biography from './components/Bio/Biography'
 import PersonalBio from './components/Bio/PersonalBio'
+import DownloadButton from './components/Buttons/DownloadButton'
 import LongButton from './components/Buttons/LongButton'
 import SmallButton from './components/Buttons/SmallButton'
+// Imports for files
+import CV from '../src/assets/Kieran_Pritchard_C.V.pdf'
 
 function App() {
   return(
@@ -31,6 +35,7 @@ function App() {
               {/* This will now align perfectly with the edges of the buttons above */}
               <div className='col-span-6'>
                   <LongButton text="CTF (Capture The Flag Write Ups)" link="https://kieranpritchard.github.io/CTF-Showcase/#/" icon="globe" />
+                  <DownloadButton fileName={"KieranPritchard-C.V.pdf"} file={CV} text={"Download My C.V"}/>
               </div>
             </div>
 
