@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // Button which features a image drop down
-function DropDownButton({text, image, altText}) {
+function ImageDropDownButton({text, image, altText}) {
     // State to tract wheter the button is open or not
     const [isOpen, setIsOpen] = useState(false);
 
@@ -36,4 +36,4 @@ function DropDownButton({text, image, altText}) {
     );
 }
 
-export default DropDownButton;
+export default ImageDropDownButton;
