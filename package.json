@@ -1,9 +1,9 @@
 {
-  "name": "linknest",
+  "name": "rootpath",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "/LinkNest/",
+  "homepage": "/RootPath/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
