@@ -11,7 +11,6 @@ function DownloadButton({file, fileName, text}){
             download={fileName}
         >
             {/* Icon on the far left */}
-            {/* Fixed: Responsive icon size to prevent crowding */}
             <span className='text-3xl md:text-4xl'>
                 <FontAwesomeIcon icon={faDownload} />
             </span>

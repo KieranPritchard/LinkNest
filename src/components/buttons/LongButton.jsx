@@ -17,11 +17,6 @@ function LongButton({text, link, icon}){
     }
 
     return(
-        /* Responsive Fixes: 
-            - Height: Changed from h-22 to min-h-[70px] md:h-22 for better mobile fit.
-            - Text: Changed text-xl to text-lg md:text-xl.
-            - Padding: Added responsive horizontal padding.
-        */
         <button
             className="relative flex items-center justify-between bg-[#2a3c4b] dark:bg-[#a9d6e5] text-[#f9fafb] dark:text-[#0d1b2a] border-[#2a3c4b] dark:border-[#a9d6e5] hover:text-[#2a3c4b] dark:hover:text-[#a9d6e5] w-full rounded-xl border-2 text-lg md:text-xl hover:bg-transparent transition-colors duration-300 ease-in-out px-4 md:px-6 mt-2 min-h-[70px] md:h-22"
             onClick={() => handleLink(link)}
