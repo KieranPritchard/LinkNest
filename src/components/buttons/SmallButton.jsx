@@ -33,7 +33,14 @@ function SmallButton({icon, link}) {
 
     // Returns a button component
     return (
-        <button onClick={() => handleClick()} className="bg-[#A9D6E5] hover:bg-[#1B2B41] text-[#1B2B41] hover:text-[#A9D6E5] border-2 border-[#A9D6E5] text-4xl h-22 w-22 rounded-xl transition-all transition-300">
+        /* Fixed: Changed h-22 w-22 to responsive sizes. 
+            Mobile: h-16 w-16 | Tablet/Desktop: md:h-22 md:w-22
+            Added 'flex items-center justify-center' to ensure icons stay centered.
+        */
+        <button 
+            onClick={() => handleClick()} 
+            className="bg-[#A9D6E5] hover:bg-[#1B2B41] text-[#1B2B41] hover:text-[#A9D6E5] border-2 border-[#A9D6E5] text-3xl md:text-4xl h-16 w-16 md:h-22 md:w-22 rounded-xl transition-all duration-300 flex items-center justify-center mx-auto"
+        >
             {/* Uses the get icon function to display the icon */}
             <FontAwesomeIcon icon={getIcon()} />
         </button>
