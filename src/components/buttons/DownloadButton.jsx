@@ -17,7 +17,7 @@ function DownloadButton({file, fileName, text}){
 
             {/* Text centered */}
             {/* Added max-width and text-center to handle long file names on mobile */}
-            <span className="absolute left-1/2 transform -translate-x-1/2 w-max max-w-[65%] text-center leading-tight">
+            <span className="text-body absolute left-1/2 transform -translate-x-1/2 w-max max-w-[65%] text-center leading-tight">
                 {text}
             </span>
 

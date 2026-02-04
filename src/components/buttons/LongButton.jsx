@@ -26,7 +26,7 @@ function LongButton({text, link, icon}){
 
             {/* Text centered using Flexbox logic instead of Absolute for better stability */}
             {/* Updated: Added 'px-10' to prevent text from hitting icons on very narrow screens */}
-            <span className="absolute left-1/2 -translate-x-1/2 w-max max-w-[70%] text-center leading-tight px-2">
+            <span className="text-body absolute left-1/2 -translate-x-1/2 w-max max-w-[70%] text-center leading-tight px-2">
                 {text}
             </span>
 

@@ -11,9 +11,9 @@ function PersonalBio(){
             {/* Fixed: Removed justify-center so it aligns left on desktop but center on mobile */}
             <div className="flex flex-col justify-center text-[#1B2B41] dark:text-[#f9fafb] text-center lg:text-left">
                 {/* Section with bio */}
-                <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>Kieran Pritchard</h1>
-                <h2 className='text-2xl md:text-3xl lg:text-4xl mt-2'>T-Level Student</h2>
-                <p className='text-lg md:text-xl mt-1 opacity-90'>Contact: KieranPritchard06@gmail.com</p>
+                <h1 className='text-header text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>Kieran Pritchard</h1>
+                <h2 className='text-body text-2xl md:text-3xl lg:text-4xl mt-2'>T-Level Student</h2>
+                <p className='text-body text-lg md:text-xl mt-1 opacity-90'>Contact: KieranPritchard06@gmail.com</p>
             </div>
         </div>
     )
