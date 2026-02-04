@@ -22,7 +22,7 @@ function App() {
         <ContentBackground>
           
           {/* Container to maintain alignment across the whole app */}
-          <div className='max-w-screen-xl mx-auto'>
+          <div className='flex flex-col justify-center max-w-screen-xl mx-auto'>
             
             {/* Returns the personal bio and biography */}
             <PersonalBio />
