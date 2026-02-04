@@ -1,1 +1,10 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&family=Roboto:ital@0;1&display=swap');
+
+/* Header text font style */
+.text-header {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
